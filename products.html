@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/navbar.css">
+    <link rel="stylesheet" href="./styles/products.css">
+    <link rel="stylesheet" href="./styles/navigator.css">
+    <link rel="stylesheet" href="./styles/layout.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="layout">
+        <div class="navbar">
+            <div class="navbar-blok">
+                <div class="navbar-blok__section">
+                    <a href="categories.html"><img src="./images/logo.jpg" alt="Company Logo"></a>
+                </div>
+                <div class="navbar-blok__section">
+                    <div class="navbar-blok__section__container">
+                        <!-- Logout -->
+                        <div id="logout" class="navbar-blok__section__container__icon__exit">
+                            <i
+                                class="fa-solid fa-arrow-right-from-bracket navbar-blok__section__container__icon__exit"></i>
+                        </div>
+                        <!---->
+                        <a href="cart.html" class="navbar-blok__section__container__part" id="cart">
+                            <p>Cart</p>
+                            <div>
+                                <i class="fa-solid fa-cart-shopping navbar-blok__section__container__icon"></i>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="navbar-blok__section__container">
+                        <a href="orders.html" class="navbar-blok__section__container__part" id="orders">
+                            <p>Orders</p>
+                            <i class="fa-solid fa-clock-rotate-left navbar-blok__section__container__icon"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="navigator">
+            <div class="navigator-blok">
+                <a href="categories.html">Main</a>
+                <i class="fa-solid fa-angle-right navigator__slesh"></i>
+                <p class="navigator__p">Category</p>
+            </div>
+        </div>
+        <div class="producs">
+            <div class="products-blok">
+                <div class="products-blok__section">
+                    <div class="products-blok__section__image">
+                        <a href=""> <!-- Ссылка на детальную страницу этого продукта -->
+                            <img src="/images/category.jpg" alt="" />
+                        </a>
+                    </div>
+                    <a href=""> <!-- Ссылка на детальную страницу этого продукта -->
+                        <h2>Product Name</h2>
+                    </a>
+                    <div class="products-blok__container">
+                        <div class="products-blok__container__section">
+                            <i class="fa-solid fa-tag products-blok__container__section__icon"></i>
+                            <p>
+                                Price: <span id="price" style="color: blue; font-weight: bold">20000</span> UZS
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./products.js"></script>
+</body>
+
+</html>

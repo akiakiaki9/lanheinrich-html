@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/navbar.css">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/layout.css">
+    <link rel="stylesheet" href="./styles/cart.css">
+    <link rel="stylesheet" href="./styles/navigator.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class='layout'>
+        <div class="navbar">
+            <div class="navbar-blok">
+                <div class="navbar-blok__section">
+                    <a href="categories.html"><img src="./images/logo.jpg" alt="Company Logo"></a>
+                </div>
+                <div class="navbar-blok__section">
+                    <div class="navbar-blok__section__container">
+                        <!-- Logout -->
+                        <div id="logout" class="navbar-blok__section__container__icon__exit">
+                            <i
+                                class="fa-solid fa-arrow-right-from-bracket navbar-blok__section__container__icon__exit"></i>
+                        </div>
+                        <!---->
+                        <a href="cart.html" class="navbar-blok__section__container__part" id="cart">
+                            <p>Cart</p>
+                            <div>
+                                <i class="fa-solid fa-cart-shopping navbar-blok__section__container__icon"></i>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="navbar-blok__section__container">
+                        <a href="orders.html" class="navbar-blok__section__container__part" id="orders">
+                            <p>Orders</p>
+                            <i class="fa-solid fa-clock-rotate-left navbar-blok__section__container__icon"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="navigator">
+            <div class="navigator-blok">
+                <a href="categories.html">Main</a>
+                <i class="fa-solid fa-angle-right navigator__slesh"></i>
+                <p class='navigator__p'>Cart</p>
+            </div>
+        </div>
+        <div class='cart'>
+            <div class="cart-blok">
+                <div class="cart-blok__section cart-blok__section__header">
+                    <div class="cart-blok__section-part cart-blok__section-part-main"
+                        style="color: 'var(--main-color)'">
+                        PRODUCT
+                    </div>
+                    <div class="cart-blok__section-part cart-blok__section-part-1"
+                        style="color: 'var(--main-color)'">
+                        PRICE
+                    </div>
+                    <div class="cart-blok__section-part cart-blok__section-part-1"
+                        style="color: 'var(--main-color)'">
+                        CATEGORY
+                    </div>
+                    <div class="cart-blok__section-part__end"></div>
+                </div>
+                <br />
+                <hr />
+                <br />
+                <div class='cart-blok__section cart-blok__section-2' key={item.id}>
+                    <div class="cart-blok__section-part cart-blok__section-part-main">
+                        <div class="cart-blok__section-part__footer">
+                            <div class="cart-blok__section-part__footer__image">
+                                <a href=''> <!-- Ссылка на детальную страницу этого продукта -->
+                                    <img src="/images/category.jpg" alt="" />
+                                </a>
+                            </div>
+                            <a href=''> <!-- Ссылка на детальную страницу этого продукта -->
+                                <h3>PRODUCT</h3>
+                            </a>
+                            <!-- Удалить эту хуйню (продукт) из корзины -->
+                            <i class="fa-solid fa-xmark cart__invisible cart-blok__section-part__end__icon"></i>
+                            <!---->
+                        </div>
+                    </div>
+                    <div class="cart__invisible">
+                        <a to='/'>
+                            <h2 style=" margin: '5px 0 20px 0' ">{item.name}</h2>
+                        </a>
+                    </div>
+                    <div class="cart-blok__section-part cart-blok__section-part-1">
+                        <p>
+                            <span class='cart__invisible'>Price:</span>
+                            <p>
+                                Price: <span id="price">20000</span> UZS
+                            </p>
+                        </p>
+                    </div>
+                    <div class="cart-blok__section-part cart-blok__section-part-1">
+                        <p><span class='cart__invisible'>Category:</span> Category</p> <!-- К какому категорию относится продукт -->
+                    </div>
+                    <!-- Удалить эту хуйню (продукт) из корзины -->
+                    <div class="cart-blok__section-part__end">
+                        <i class="fa-solid fa-xmark cart-blok__section-part__end__icon"></i>
+                    </div>
+                    <!---->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./products.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/navbar.css">
+    <link rel="stylesheet" href="./styles/layout.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="layout">
+        <div class="navbar">
+            <div class="navbar-blok">
+                <div class="navbar-blok__section">
+                    <a href="categories.html"><img src="./images/logo.jpg" alt="Company Logo"></a>
+                </div>
+                <div class="navbar-blok__section">
+                    <div class="navbar-blok__section__container">
+                        <!-- Logout -->
+                        <div id="logout" class="navbar-blok__section__container__icon__exit">
+                            <i
+                                class="fa-solid fa-arrow-right-from-bracket navbar-blok__section__container__icon__exit"></i>
+                        </div>
+                        <!---->
+                        <a href="cart.html" class="navbar-blok__section__container__part" id="cart">
+                            <p>Cart</p>
+                            <div>
+                                <i class="fa-solid fa-cart-shopping navbar-blok__section__container__icon"></i>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="navbar-blok__section__container">
+                        <a href="orders.html" class="navbar-blok__section__container__part" id="orders">
+                            <p>Orders</p>
+                            <i class="fa-solid fa-clock-rotate-left navbar-blok__section__container__icon"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class='layout-blok'>
+            <div class="layout-blok__section">
+                <div class="layout-blok__section__image">
+                    <a href=""> <!-- Ссылка на страницу products где отображаются только проудкты относившиеся к этой категории -->
+                        <img src="./images/category.jpg" alt="Langheinrich Product" />
+                    </a>
+                </div>
+                <a href=""> <!-- Ссылка на страницу products где отображаются только проудкты относившиеся к этой категории -->
+                    <h2>Category Name</h2>
+                </a>
+                <div class="layout-blok__section__footer">
+                    <i class="fa-solid fa-clipboard-list layout-blok__section__footer__icon"></i>
+                    <p>Products <span>25</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./navbar.js"></script>
+</body>
+
+</html>
