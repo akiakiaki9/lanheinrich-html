@@ -36,6 +36,7 @@
 .cart-blok__section-part__end__icon {
     cursor: pointer;
     transition: .5s;
+    font-size: 120%;
 }
 
 .cart-blok__section-part__end__icon:hover {
